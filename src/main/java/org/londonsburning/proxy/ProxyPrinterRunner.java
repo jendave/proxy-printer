@@ -30,7 +30,10 @@ public final class ProxyPrinterRunner {
     private ProxyPrinterRunner() {
     }
 
-    private final static Logger logger = LoggerFactory
+    /**
+     *
+     */
+    private final Logger logger = LoggerFactory
             .getLogger(ProxyPrinterRunner.class);
 
 

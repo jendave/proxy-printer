@@ -38,7 +38,7 @@ public class FlagParser {
     /**
      *
      */
-    private final static Logger logger = LoggerFactory
+    private final Logger logger = LoggerFactory
                 .getLogger(FlagParser.class);
 
     /**

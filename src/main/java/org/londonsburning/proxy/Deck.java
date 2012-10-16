@@ -16,6 +16,7 @@
  */
 package org.londonsburning.proxy;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
@@ -39,7 +40,7 @@ public class Deck {
     /**
      *
      */
-    private final static org.slf4j.Logger logger = LoggerFactory
+    private final Logger logger = LoggerFactory
             .getLogger(Deck.class);
 
     /**

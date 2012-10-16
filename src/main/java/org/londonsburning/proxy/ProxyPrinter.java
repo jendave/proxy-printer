@@ -50,7 +50,7 @@ public class ProxyPrinter {
     /**
      *
      */
-    private final static Logger logger = LoggerFactory
+    private final Logger logger = LoggerFactory
                 .getLogger(ProxyPrinterRunner.class);
 
     /**
