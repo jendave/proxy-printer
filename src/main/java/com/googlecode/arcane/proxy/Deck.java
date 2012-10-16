@@ -16,6 +16,8 @@
  */
 package com.googlecode.arcane.proxy;
 
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -24,7 +26,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.TreeMap;
-import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -38,8 +39,8 @@ public class Deck {
     /**
      *
      */
-    private static Logger log =
-            Logger.getLogger(Deck.class.getCanonicalName());
+    private final static org.slf4j.Logger logger = LoggerFactory
+            .getLogger(Deck.class);
 
     /**
      * @return String deckName
@@ -124,9 +125,9 @@ public class Deck {
             in.close();
 
         } catch (FileNotFoundException e) {
-            log.info("File not found");
+            logger.debug("File not found");
         } catch (IOException e) {
-            log.info("IO Error");
+            logger.debug("IO Error");
         }
     }
 }

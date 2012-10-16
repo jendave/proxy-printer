@@ -16,6 +16,9 @@
  */
 package com.googlecode.arcane.proxy;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created with IntelliJ IDEA.
  * User: dhudson
@@ -31,6 +34,12 @@ public class FlagParser {
     public FlagParser(final String skipBasicLandsFlagParam) {
         this.skipBasicLandsFlag = skipBasicLandsFlagParam;
     }
+
+    /**
+     *
+     */
+    private final static Logger logger = LoggerFactory
+                .getLogger(FlagParser.class);
 
     /**
      * @return String[] flags

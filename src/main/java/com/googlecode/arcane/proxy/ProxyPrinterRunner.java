@@ -16,6 +16,8 @@
  */
 package com.googlecode.arcane.proxy;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -27,6 +29,11 @@ public final class ProxyPrinterRunner {
      */
     private ProxyPrinterRunner() {
     }
+
+    private final static Logger logger = LoggerFactory
+            .getLogger(ProxyPrinterRunner.class);
+
+
 
     /**
      * @param args FileName

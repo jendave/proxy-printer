@@ -20,6 +20,8 @@ import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -34,7 +36,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
-import java.util.logging.Logger;
 
 /**
  * Generates the HTML for the proxies.
@@ -49,8 +50,8 @@ public class ProxyPrinter {
     /**
      *
      */
-    private static Logger log =
-            Logger.getLogger(ProxyPrinter.class.getCanonicalName());
+    private final static Logger logger = LoggerFactory
+                .getLogger(ProxyPrinterRunner.class);
 
     /**
      * @param proxyConfigurationParam ProxyConfiguration
@@ -111,13 +112,13 @@ public class ProxyPrinter {
             htmlOutput.flush();
             htmlOutput.close();
         } catch (final IOException e) {
-            log.info(e.toString());
+            logger.debug(e.toString());
         } catch (final TemplateException e) {
-            log.info(e.toString());
+            logger.debug(e.toString());
         } catch (final URISyntaxException e) {
-            log.info(e.toString());
+            logger.debug(e.toString());
         } catch (final InterruptedException e) {
-            log.info(e.toString());
+            logger.debug(e.toString());
         }
     }
 
@@ -173,6 +174,7 @@ public class ProxyPrinter {
                 File htmlFile = new File(arg.replace(".dec", ".html"));
                 generateHtml(deck, htmlFile, flagParserParam
                         .isSkipBasicLands());
+                logger.info("Output file: " + htmlFile.getName());
             }
         }
     }
