@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.googlecode.arcane.proxy</groupId>
@@ -125,11 +126,20 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
+                    <attach>false</attach>
                     <quiet>true</quiet>
                     <failOnError>false</failOnError>
                     <detectOfflineLinks>false</detectOfflineLinks>
                     <show>package</show>
                     <level>package</level>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <configuration>
+                    <attach>false</attach>
                 </configuration>
             </plugin>
 
@@ -147,7 +157,7 @@
                     <execution>
                         <id>make-assembly-jar</id>
                         <configuration>
-                            <attach>true</attach>
+                            <attach>false</attach>
                             <archive>
                                 <manifest>
                                     <mainClass>${main.class}</mainClass>
