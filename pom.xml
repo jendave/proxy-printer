@@ -213,13 +213,6 @@
             </plugin>
 
             <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <goals>ghDownloads:upload site</goals>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <configuration>
@@ -230,7 +223,7 @@
                         <goals>
                             <goal>site</goal>
                         </goals>
-                        <phase>deploy</phase>
+                        <phase>site</phase>
                     </execution>
                 </executions>
             </plugin>
