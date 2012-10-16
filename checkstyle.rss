@@ -3,19 +3,19 @@
 <rss version="0.91">
   <channel>
     <title>proxy-printer - Checkstyle report</title>
-    <link>https://code.google.com/p/arcane/</link>
+    <link>https://github.com/jendave/proxy-printer</link>
     <description>proxy-printer - Checkstyle report</description>
     <language>en-us</language>
-    <copyright>&#169;2012 Proxy Printer</copyright>
+    <copyright>&#169;2012 David Hudson</copyright>
     <item>
       <title>File: 6,
              Errors: 23,
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://code.google.com/p/arcane//checkstyle.html</link>
+            <link>https://github.com/jendave/proxy-printer/checkstyle.html</link>
       <description>
-        <p>Click <a href="https://code.google.com/p/arcane//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://github.com/jendave/proxy-printer/checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,49 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://code.google.com/p/arcane//checkstyle.html#com.googlecode.arcane.proxy.Deck.java">com/googlecode/arcane/proxy/Deck.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://code.google.com/p/arcane//checkstyle.html#com.googlecode.arcane.proxy.FlagParser.java">com/googlecode/arcane/proxy/FlagParser.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  5
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://code.google.com/p/arcane//checkstyle.html#com.googlecode.arcane.proxy.ProxyConfiguration.java">com/googlecode/arcane/proxy/ProxyConfiguration.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://code.google.com/p/arcane//checkstyle.html#com.googlecode.arcane.proxy.ProxyPrinterRunner.java">com/googlecode/arcane/proxy/ProxyPrinterRunner.java</a>
+                  <a href="https://github.com/jendave/proxy-printer/checkstyle.html#org.londonsburning.proxy.ProxyPrinterRunner.java">org/londonsburning/proxy/ProxyPrinterRunner.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://code.google.com/p/arcane//checkstyle.html#com.googlecode.arcane.proxy.ProxyPrinter.java">com/googlecode/arcane/proxy/ProxyPrinter.java</a>
+                  <a href="https://github.com/jendave/proxy-printer/checkstyle.html#org.londonsburning.proxy.ProxyPrinter.java">org/londonsburning/proxy/ProxyPrinter.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +57,49 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://code.google.com/p/arcane//checkstyle.html#com.googlecode.arcane.proxy.package-info.java">com/googlecode/arcane/proxy/package-info.java</a>
+                  <a href="https://github.com/jendave/proxy-printer/checkstyle.html#org.londonsburning.proxy.Deck.java">org/londonsburning/proxy/Deck.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/jendave/proxy-printer/checkstyle.html#org.londonsburning.proxy.ProxyConfiguration.java">org/londonsburning/proxy/ProxyConfiguration.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/jendave/proxy-printer/checkstyle.html#org.londonsburning.proxy.FlagParser.java">org/londonsburning/proxy/FlagParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/jendave/proxy-printer/checkstyle.html#org.londonsburning.proxy.package-info.java">org/londonsburning/proxy/package-info.java</a>
                 </td>
                 <td>
                   0

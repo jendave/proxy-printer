@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.3" timestamp="2012-10-16T13:43:12.485">
-<file name="/Users/dhudson/git/proxy-printer/src/main/java/com/googlecode/arcane/proxy/FlagParser.java">
-<violation beginline="41" endline="41" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="com.googlecode.arcane.proxy" class="FlagParser" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+<pmd version="4.3" timestamp="2012-10-16T14:49:31.596">
+<file name="/Users/dhudson/git/proxy-printer/src/main/java/org/londonsburning/proxy/FlagParser.java">
+<violation beginline="41" endline="41" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.londonsburning.proxy" class="FlagParser" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'logger'.
 </violation>
 </file>
-<file name="/Users/dhudson/git/proxy-printer/src/main/java/com/googlecode/arcane/proxy/ProxyConfiguration.java">
-<violation beginline="61" endline="61" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="com.googlecode.arcane.proxy" class="ProxyConfiguration" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+<file name="/Users/dhudson/git/proxy-printer/src/main/java/org/londonsburning/proxy/ProxyConfiguration.java">
+<violation beginline="61" endline="61" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.londonsburning.proxy" class="ProxyConfiguration" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'logger'.
 </violation>
 </file>
-<file name="/Users/dhudson/git/proxy-printer/src/main/java/com/googlecode/arcane/proxy/ProxyPrinterRunner.java">
-<violation beginline="33" endline="33" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="com.googlecode.arcane.proxy" class="ProxyPrinterRunner" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+<file name="/Users/dhudson/git/proxy-printer/src/main/java/org/londonsburning/proxy/ProxyPrinterRunner.java">
+<violation beginline="33" endline="33" begincolumn="33" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.londonsburning.proxy" class="ProxyPrinterRunner" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'logger'.
 </violation>
 </file>
