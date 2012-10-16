@@ -4,12 +4,12 @@ proxy-printer
 Prints out quick-and-dirty proxies for a popular trading card game
 
 ## DESCRIPTION:
----
+
 This application will print out quick-and-dirty proxies for a popular trading card game.
 The images are simply linked from magiccards.info.
 
 ## INSTALLATION:
----
+
 To install it simply unzip the zip file into a directory in your path.
 You will see four files.
 
@@ -19,7 +19,7 @@ You will see four files.
     proxy-printer.properties
 
 ## CONFIGURATION:
----
+
 Run proxy-printer with the following syntax:
 
     proxy-printer <flags> <filename.dec>
@@ -45,7 +45,7 @@ You can also set some properties in the `proxy-printer.properties` file
     config.skipBasicLands=true
 
 ## LICENSE:
----
+
 Author: David Hudson <jendave@yahoo.com>
 
 Copyright: Copyright (c) 2012 David Hudson.
@@ -67,5 +67,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 ## How to Contribute
----
+
 Send pull request to <https://github.com/jendave/proxy-printer>.
