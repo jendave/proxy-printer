@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="org.springframework.beans.factory.config.PropertyOverrideConfigurer">
+        <property name="location" value="file:proxy-printer.properties"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+    </bean>
+
+    <bean id="config" class="com.googlecode.arcane.proxy.ProxyConfiguration">
+        <constructor-arg name="cardBorder" value="0"/>
+        <constructor-arg name="cardHeight" value="319"/>
+        <constructor-arg name="cardWidth" value="222"/>
+        <constructor-arg name="cardListWidthParam" value="11"/>
+        <constructor-arg name="outputTemplateParam" value="proxy-template.ftl"/>
+        <constructor-arg name="basicLandNamesParam">
+            <set>
+                <value>Plains</value>
+                <value>Island</value>
+                <value>Swamp</value>
+                <value>Mountain</value>
+                <value>Forest</value>
+            </set>
+        </constructor-arg>
+        <constructor-arg name="flagParserParam" ref="flagParser"/>
+        <property name="skipBasicLands" value="false"/>
+
+    </bean>
+
+    <bean id="flagParser" class="com.googlecode.arcane.proxy.FlagParser">
+        <constructor-arg name="skipBasicLandsFlagParam" value="--skip-basic"/>
+    </bean>
+
+    <bean id="proxyPrinter" class="com.googlecode.arcane.proxy.ProxyPrinter">
+        <constructor-arg name="proxyConfigurationParam" ref="config"/>
+    </bean>
+</beans>
