@@ -7,16 +7,16 @@
     <packaging>jar</packaging>
 
     <name>proxy-printer</name>
-    <url>https://code.google.com/p/arcane/</url>
+    <url>https://github.com/jendave/proxy-printer</url>
     <description>Proxy Printer will get proxies from magiccards.info and assemble them into a web page.</description>
     <organization>
-        <name>Proxy Printer</name>
-        <url>https://code.google.com/p/arcane/</url>
+        <name>David Hudson</name>
+        <url>https://github.com/jendave</url>
     </organization>
     <inceptionYear>2012</inceptionYear>
     <issueManagement>
         <system>Issue List</system>
-        <url>https://code.google.com/p/arcane/issues/list</url>
+        <url>https://github.com/jendave/proxy-printer/issues</url>
     </issueManagement>
 
     <scm>
@@ -28,7 +28,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <main.class>com.googlecode.arcane.proxy.ProxyPrinterRunner</main.class>
+        <main.class>org.londonsburning.proxy.ProxyPrinterRunner</main.class>
         <app.name>${project.artifactId}</app.name>
         <github.global.server>github</github.global.server>
     </properties>
@@ -57,8 +57,8 @@
 
     <mailingLists>
         <mailingList>
-            <name>Arcane Issues List</name>
-            <archive>https://code.google.com/p/arcane/issues/list</archive>
+            <name>Proxy Printer Issues List</name>
+            <archive>https://github.com/jendave/proxy-printer/issues</archive>
         </mailingList>
     </mailingLists>
 

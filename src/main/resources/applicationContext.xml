@@ -12,7 +12,7 @@
         <property name="ignoreResourceNotFound" value="true"/>
     </bean>
 
-    <bean id="config" class="com.googlecode.arcane.proxy.ProxyConfiguration">
+    <bean id="config" class="org.londonsburning.proxy.ProxyConfiguration">
         <constructor-arg name="cardBorder" value="0"/>
         <constructor-arg name="cardHeight" value="319"/>
         <constructor-arg name="cardWidth" value="222"/>
@@ -32,11 +32,11 @@
 
     </bean>
 
-    <bean id="flagParser" class="com.googlecode.arcane.proxy.FlagParser">
+    <bean id="flagParser" class="org.londonsburning.proxy.FlagParser">
         <constructor-arg name="skipBasicLandsFlagParam" value="--skip-basic"/>
     </bean>
 
-    <bean id="proxyPrinter" class="com.googlecode.arcane.proxy.ProxyPrinter">
+    <bean id="proxyPrinter" class="org.londonsburning.proxy.ProxyPrinter">
         <constructor-arg name="proxyConfigurationParam" ref="config"/>
     </bean>
 </beans>

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.googlecode.arcane.proxy;
+package org.londonsburning.proxy;
 
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
@@ -168,8 +168,8 @@ public class ProxyPrinter {
         for (String arg : flagParserParam.getFlags()) {
             if (!arg.contentEquals(flagParserParam.getSkipBasicLandsFlag())) {
                 File file = new File(arg);
-                com.googlecode.arcane.proxy.Deck deck =
-                        new com.googlecode.arcane.proxy.Deck(file);
+                org.londonsburning.proxy.Deck deck =
+                        new org.londonsburning.proxy.Deck(file);
                 deck.parse();
                 File htmlFile = new File(arg.replace(".dec", ".html"));
                 generateHtml(deck, htmlFile, flagParserParam

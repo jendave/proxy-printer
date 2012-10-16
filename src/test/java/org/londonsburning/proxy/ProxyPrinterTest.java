@@ -1,4 +1,4 @@
-package com.googlecode.arcane.proxy;
+package org.londonsburning.proxy;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
