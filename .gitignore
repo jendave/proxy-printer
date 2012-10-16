@@ -1,6 +1,9 @@
 *.class
 .idea
 release.properties
+pom.xml.next
+pom.xml.releaseBackup
+pom.xml.tag
 
 # Package Files #
 *.jar
