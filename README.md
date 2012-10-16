@@ -52,7 +52,7 @@ Send a pull request to <https://github.com/jendave/proxy-printer>.
 
 Maven site development documentation:
 
-    http://jendave.github.com/proxy-printer/
+    <http://jendave.github.com/proxy-printer>
 
 ## LICENSE:
 
