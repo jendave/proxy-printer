@@ -136,16 +136,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.google.code.maven-svn-wagon</groupId>
-                        <artifactId>maven-svn-wagon</artifactId>
-                        <version>1.4</version>
-                    </dependency>
-                </dependencies>
             </plugin>
 
             <plugin>
@@ -298,13 +288,6 @@
                     <configuration>
                         <port>8081</port>
                     </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.google.code.maven-svn-wagon</groupId>
-                            <artifactId>maven-svn-wagon</artifactId>
-                            <version>1.4</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
 
                 <plugin>
