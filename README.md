@@ -44,6 +44,16 @@ You can also set some properties in the `proxy-printer.properties` file
     config.cardWidth=222
     config.skipBasicLands=true
 
+## CONTRIBUTE
+
+proxy-printer is written in Java using JDK 1.6
+
+Send a pull request to <https://github.com/jendave/proxy-printer>.
+
+Maven site development documentation:
+
+    http://jendave.github.com/proxy-printer/
+
 ## LICENSE:
 
 Author: David Hudson <jendave@yahoo.com>
@@ -65,7 +75,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
-## How to Contribute
-
-Send pull request to <https://github.com/jendave/proxy-printer>.
