@@ -3,7 +3,7 @@
 
     <groupId>com.googlecode.arcane.proxy</groupId>
     <artifactId>proxy-printer</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>proxy-printer</name>
@@ -23,7 +23,7 @@
         <connection>scm:git:git@github.com:jendave/proxy-printer.git</connection>
         <developerConnection>scm:git:git@github.com:jendave/proxy-printer.git</developerConnection>
         <url>https://github.com/jendave/proxy-printer</url>
-        <tag>proxy-printer-0.0.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
