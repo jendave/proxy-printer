@@ -3,7 +3,7 @@
 
     <groupId>org.londonsburning.proxy</groupId>
     <artifactId>proxy-printer</artifactId>
-    <version>0.0.10-SNAPSHOT</version>
+    <version>0.0.10</version>
     <packaging>jar</packaging>
 
     <name>proxy-printer</name>
@@ -23,7 +23,7 @@
         <connection>scm:git:git@github.com:jendave/proxy-printer.git</connection>
         <developerConnection>scm:git:git@github.com:jendave/proxy-printer.git</developerConnection>
         <url>https://github.com/jendave/proxy-printer</url>
-        <tag>HEAD</tag>
+        <tag>proxy-printer-0.0.10</tag>
     </scm>
 
     <properties>
