@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.3" timestamp="2012-10-16T15:45:54.691">
+<pmd version="4.3" timestamp="2012-10-20T09:51:51.000">
 <file name="/Users/dhudson/git/proxy-printer/src/main/java/org/londonsburning/proxy/FlagParser.java">
 <violation beginline="41" endline="41" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.londonsburning.proxy" class="FlagParser" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'logger'.
 </violation>
 </file>
 <file name="/Users/dhudson/git/proxy-printer/src/main/java/org/londonsburning/proxy/ProxyConfiguration.java">
-<violation beginline="61" endline="61" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.londonsburning.proxy" class="ProxyConfiguration" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+<violation beginline="63" endline="63" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.londonsburning.proxy" class="ProxyConfiguration" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'logger'.
 </violation>
 </file>
