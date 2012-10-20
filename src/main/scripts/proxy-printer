@@ -109,5 +109,5 @@ exec "$JAVACMD" $JAVA_OPTS  \
   -Dapp.repo="$REPO" \
   -Dapp.home="$BASEDIR" \
   -Dbasedir="$BASEDIR" \
-  org.londonsburning.proxy.ProxyPrinterRunner \
+  -jar ${project.artifactId}-${project.version}-jar-with-dependencies.jar \
   "$@"
