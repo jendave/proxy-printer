@@ -101,8 +101,10 @@ public class ProxyPrinter {
                     deck.getCardList();
             root.put("urls", list);
             root.put("cardBorder", this.proxyConfiguration.getCardBorder());
-            root.put("cardHeight", this.proxyConfiguration.getCardHeight());
-            root.put("cardWidth", this.proxyConfiguration.getCardWidth());
+            root.put("cardHeight", Math.round(this.proxyConfiguration.getCardHeight()
+                    * this.proxyConfiguration.getCardScale()));
+            root.put("cardWidth", Math.round(this.proxyConfiguration.getCardWidth()
+                    * this.proxyConfiguration.getCardScale()));
             root.put("cardListWidth", this.proxyConfiguration.getCardWidth()
                     - this.proxyConfiguration.getCardListWidth());
             root.put("cardList", map);
@@ -154,7 +156,7 @@ public class ProxyPrinter {
             if (lineHtml.contains("http://magiccards.info/scans/en")
                     && lineHtml.contains("jpg")) {
                 lineHtml = lineHtml.substring(lineHtml.indexOf("http"),
-                        lineHtml.indexOf("jpg") + ".jpg".length());
+                        lineHtml.indexOf("jpg") + ".jpg".length() - 1);
                 return lineHtml;
             }
         }

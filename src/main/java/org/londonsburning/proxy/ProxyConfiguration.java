@@ -41,6 +41,7 @@ public class ProxyConfiguration {
     public ProxyConfiguration(final int cardBorder,
                               final int cardHeight,
                               final int cardWidth,
+                              final float cardScale,
                               final int cardListWidthParam,
                               final String outputTemplateParam,
                               final HashSet<String> basicLandNamesParam,
@@ -49,6 +50,7 @@ public class ProxyConfiguration {
         this.cardBorder = cardBorder;
         this.cardHeight = cardHeight;
         this.cardWidth = cardWidth;
+        this.cardScale = cardScale;
         this.outputTemplate = outputTemplateParam;
         this.cardListWidth = cardListWidthParam;
         this.basicLandNames = basicLandNamesParam;
@@ -80,6 +82,27 @@ public class ProxyConfiguration {
      *
      */
     private int cardBorder;
+
+    /**
+     *
+     * @return int scale of card
+     */
+    public float getCardScale() {
+        return cardScale;
+    }
+
+    /**
+     *
+     * @param cardScale float scale the card
+     */
+    public void setCardScale(float cardScale) {
+        this.cardScale = cardScale;
+    }
+
+    /**
+     *
+     */
+     private float cardScale;
 
     /**
      *

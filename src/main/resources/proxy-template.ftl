@@ -33,19 +33,17 @@
     </style>
 </head>
 <body>
-<#list urls as url>
-<img src="${url}" height="${cardHeight}" width="${cardWidth}" style="margin: 0 ${cardBorder}px ${cardBorder}px 0;">
-</#list>
+<#list urls as url><img src="${url}" height="${cardHeight}" width="${cardWidth}" style="margin: 0 ${cardBorder}px ${cardBorder}px 0;"></#list>
 <br>
 <table style="font-size:10px;" border=1 cellpadding="5" cellspacing="1">
     <tr>
-    <td width="${cardListWidth}">
+    <td width="${cardListWidth}" valign="top">
         <b>${title}</b><br>
     <#list cardList?keys as key>
         <#if (key_index > 0)>
             <#if key_index % 19 == 0>
             </td>
-            <td width="${cardlistWidth}">
+            <td width="${cardListWidth}" valign="top">
             </#if>
         </#if>
     ${cardList[key]} ${key}<br>
