@@ -78,7 +78,7 @@ goto endInit
 @REM Reaching here means variables are defined and arguments have been captured
 :endInit
 
-%JAVACMD% -jar ${project.artifactId}-${project.version}-jar-with-dependencies.jar %CMD_LINE_ARGS%
+%JAVACMD% -jar %BASEDIR%\${project.artifactId}-${project.version}-jar-with-dependencies.jar %CMD_LINE_ARGS%
 if ERRORLEVEL 1 goto error
 goto end
 
