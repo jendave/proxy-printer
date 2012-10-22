@@ -16,8 +16,6 @@
  */
 package org.londonsburning.proxy;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -33,8 +31,8 @@ public final class ProxyPrinterRunner {
     /**
      *
      */
-    private final Logger logger = LoggerFactory
-            .getLogger(ProxyPrinterRunner.class);
+    //private final Logger logger = LoggerFactory
+    //        .getLogger(ProxyPrinterRunner.class);
 
 
 

@@ -16,9 +16,6 @@
  */
 package org.londonsburning.proxy;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Created with IntelliJ IDEA.
  * User: dhudson
@@ -38,8 +35,8 @@ public class FlagParser {
     /**
      *
      */
-    private final Logger logger = LoggerFactory
-                .getLogger(FlagParser.class);
+    //private final Logger logger = LoggerFactory
+    //            .getLogger(FlagParser.class);
 
     /**
      * @return String[] flags

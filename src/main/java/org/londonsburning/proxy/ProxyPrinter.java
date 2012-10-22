@@ -101,9 +101,11 @@ public class ProxyPrinter {
                     deck.getCardList();
             root.put("urls", list);
             root.put("cardBorder", this.proxyConfiguration.getCardBorder());
-            root.put("cardHeight", Math.round(this.proxyConfiguration.getCardHeight()
+            root.put("cardHeight", Math.round(
+                    this.proxyConfiguration.getCardHeight()
                     * this.proxyConfiguration.getCardScale()));
-            root.put("cardWidth", Math.round(this.proxyConfiguration.getCardWidth()
+            root.put("cardWidth", Math.round(
+                    this.proxyConfiguration.getCardWidth()
                     * this.proxyConfiguration.getCardScale()));
             root.put("cardListWidth", this.proxyConfiguration.getCardWidth()
                     - this.proxyConfiguration.getCardListWidth());

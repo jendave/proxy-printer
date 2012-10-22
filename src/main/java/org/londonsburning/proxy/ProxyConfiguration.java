@@ -16,9 +16,6 @@
  */
 package org.londonsburning.proxy;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.HashSet;
 
 /**
@@ -33,6 +30,7 @@ public class ProxyConfiguration {
      * @param cardBorder          int
      * @param cardHeight          int
      * @param cardWidth           int
+     * @param cardScale           int
      * @param cardListWidthParam  int
      * @param outputTemplateParam String
      * @param basicLandNamesParam Strings
@@ -60,8 +58,8 @@ public class ProxyConfiguration {
     /**
      *
      */
-    private final Logger logger = LoggerFactory
-                .getLogger(ProxyConfiguration.class);
+    //private final Logger logger = LoggerFactory
+    //        .getLogger(ProxyConfiguration.class);
 
     /**
      *
@@ -84,25 +82,23 @@ public class ProxyConfiguration {
     private int cardBorder;
 
     /**
-     *
      * @return int scale of card
      */
-    public float getCardScale() {
+    public final float getCardScale() {
         return cardScale;
     }
 
     /**
-     *
      * @param cardScale float scale the card
      */
-    public void setCardScale(float cardScale) {
+    public final void setCardScale(final float cardScale) {
         this.cardScale = cardScale;
     }
 
     /**
      *
      */
-     private float cardScale;
+    private float cardScale;
 
     /**
      *
@@ -190,7 +186,7 @@ public class ProxyConfiguration {
     }
 
     /**
-     * @param cardBorderParam  card border size
+     * @param cardBorderParam card border size
      */
     public final void setCardBorder(final int cardBorderParam) {
         this.cardBorder = cardBorderParam;
