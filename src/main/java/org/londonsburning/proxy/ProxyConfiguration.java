@@ -51,12 +51,20 @@ public class ProxyConfiguration {
      */
     private Card card0;
 
-    public int getCardListWidth() {
+    /**
+     *
+     * @return int Card List Width
+     */
+    public final int getCardListWidth() {
         return cardListWidth0;
     }
 
-    public void setCardListWidth(int cardListWidth0) {
-        this.cardListWidth0 = cardListWidth0;
+    /**
+     *
+     * @param cardListWidth int
+     */
+    public final void setCardListWidth(final int cardListWidth) {
+        this.cardListWidth0 = cardListWidth;
     }
 
     /**
