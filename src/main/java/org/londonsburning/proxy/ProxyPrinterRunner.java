@@ -29,14 +29,6 @@ public final class ProxyPrinterRunner {
     }
 
     /**
-     *
-     */
-    //private final Logger logger = LoggerFactory
-    //        .getLogger(ProxyPrinterRunner.class);
-
-
-
-    /**
      * @param args FileName
      */
     public static void main(final String[] args) {

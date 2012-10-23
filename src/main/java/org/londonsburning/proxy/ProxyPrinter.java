@@ -100,14 +100,14 @@ public class ProxyPrinter {
             final TreeMap<String, Integer> map =
                     deck.getCardList();
             root.put("urls", list);
-            root.put("cardBorder", this.proxyConfiguration.getCardBorder());
+            root.put("cardBorder", this.proxyConfiguration.getCard().getCardBorder());
             root.put("cardHeight", Math.round(
-                    this.proxyConfiguration.getCardHeight()
-                    * this.proxyConfiguration.getCardScale()));
+                    this.proxyConfiguration.getCard().getCardHeight()
+                    * this.proxyConfiguration.getCard().getCardScale()));
             root.put("cardWidth", Math.round(
-                    this.proxyConfiguration.getCardWidth()
-                    * this.proxyConfiguration.getCardScale()));
-            root.put("cardListWidth", this.proxyConfiguration.getCardWidth()
+                    this.proxyConfiguration.getCard().getCardWidth()
+                    * this.proxyConfiguration.getCard().getCardScale()));
+            root.put("cardListWidth", this.proxyConfiguration.getCard().getCardWidth()
                     - this.proxyConfiguration.getCardListWidth());
             root.put("cardList", map);
 
