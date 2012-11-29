@@ -42,6 +42,7 @@ You can also set some properties in the `proxy-printer.properties` file
     config.cardBorder=0
     config.cardHeight=319
     config.cardWidth=222
+    config.cardScale=0.9
     config.skipBasicLands=true
 
 ## CONTRIBUTE
