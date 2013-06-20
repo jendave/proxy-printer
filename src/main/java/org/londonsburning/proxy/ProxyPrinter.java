@@ -20,9 +20,6 @@ import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -36,6 +33,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Generates the HTML for the proxies.
@@ -146,25 +145,26 @@ public class ProxyPrinter {
                 "q=!" + cardName,
                 null);
         String request = uri.toString();
+        //System.out.println(request);
 
         URL url = new URL(request);
         InputStream inputStream = url.openStream();
         BufferedReader bufferedReader =
                 new BufferedReader(
                         new InputStreamReader(inputStream, "UTF-8"));
-        String returnString = "";
 
+        Thread.sleep(1000);
         while (bufferedReader.ready()) {
             String lineHtml = bufferedReader.readLine();
+            //System.out.println(lineHtml);
             Thread.sleep(1);
             if (lineHtml.contains("http://magiccards.info/scans/en")
                     && lineHtml.contains("jpg")) {
-                lineHtml = lineHtml.substring(lineHtml.indexOf("http"),
+                return lineHtml.substring(lineHtml.indexOf("http"),
                         lineHtml.indexOf("jpg") + ".jpg".length() - 1);
-                return lineHtml;
             }
         }
-        return returnString;
+        return "";
     }
 
     /**
