@@ -117,6 +117,7 @@ public class ProxyPrinter {
                     this.proxyConfiguration.getCard().getCardWidth()
                             - this.proxyConfiguration.getCardListWidth());
             root.put("cardList", map);
+            root.put("numberOfCards", deck.getNumberOfCards());
 
             /* Merge data-model with template */
             template.process(root, htmlOutput);

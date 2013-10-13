@@ -41,7 +41,7 @@ public class Deck {
      *
      */
     private final Logger logger = LoggerFactory
-            .getLogger(Deck.class);
+        .getLogger(Deck.class);
 
     /**
      * @return String deckName
@@ -58,6 +58,22 @@ public class Deck {
     }
 
     /**
+     * @return numberOfCards
+     */
+    public final int getNumberOfCards() {
+        return numberOfCards;
+    }
+
+    /**
+     * @param numberOfCardsParam NumberOfCards
+     */
+    public final void setNumberOfCards(int numberOfCardsParam) {
+        this.numberOfCards = numberOfCardsParam;
+    }
+
+
+
+    /**
      * @return cardList
      */
     public final TreeMap<String, Integer> getCardList() {
@@ -70,12 +86,18 @@ public class Deck {
     public final void setCardList(
             final TreeMap<String, Integer> cardListParam) {
         this.cardList = cardListParam;
-    }
+            }
 
     /**
      *
      */
-    private String deckName;
+    private String deckName ="";
+
+    /**
+     *
+     */
+    private int numberOfCards;
+
 
     /**
      *
@@ -111,13 +133,16 @@ public class Deck {
 
             while ((strLine = br.readLine()) != null) {
                 if (!strLine.startsWith("///")) {
-                    if (strLine.startsWith("//")) {
-                        this.deckName = strLine.substring(2).trim();
+                    if (strLine.startsWith("// Name:")) {
+                        this.deckName = strLine.substring(8).trim();
+                    } else if (strLine.startsWith("//")) {
+                        continue;
                     } else {
                         if (!strLine.trim().isEmpty()) {
-                            String[] split = strLine.split(" ", 2);
+                            String[] split = strLine.trim().split(" ", 2);
                             this.cardList.put(split[1],
                                     Integer.parseInt(split[0]));
+                            numberOfCards = numberOfCards + Integer.parseInt(split[0]);
                         }
                     }
                 }

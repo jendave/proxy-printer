@@ -48,6 +48,7 @@
         </#if>
     ${cardList[key]} ${key}<br>
     </#list>
+    <b># of Cards: </b>${numberOfCards}<br>
     </td>
     </tr>
 </table>
