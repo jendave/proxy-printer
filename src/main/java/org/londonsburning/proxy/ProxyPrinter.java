@@ -50,7 +50,7 @@ public class ProxyPrinter {
      *
      */
     private final Logger logger = LoggerFactory
-                .getLogger(ProxyPrinterRunner.class);
+            .getLogger(ProxyPrinterRunner.class);
 
     /**
      * @param proxyConfigurationParam ProxyConfiguration
@@ -64,8 +64,8 @@ public class ProxyPrinter {
      * writeDeck.
      * </p>
      *
-     * @param deck    a String
-     * @param file    a File
+     * @param deck           a String
+     * @param file           a File
      * @param skipBasicLands Skip Basic Lands
      */
     private void generateHtml(final Deck deck, final File file,
@@ -102,14 +102,20 @@ public class ProxyPrinter {
             root.put("cardBorder",
                     this.proxyConfiguration.getCard().getCardBorder());
             root.put("cardHeight", Math.round(
-                    this.proxyConfiguration.getCard().getCardHeight()
-                    * this.proxyConfiguration.getCard().getCardScale()));
+                    this.proxyConfiguration.getCard().getCardHeight() *
+                            this.proxyConfiguration
+                                    .getCard()
+                                    .getCardScale()));
             root.put("cardWidth", Math.round(
-                    this.proxyConfiguration.getCard().getCardWidth()
-                    * this.proxyConfiguration.getCard().getCardScale()));
+                    this.proxyConfiguration
+                            .getCard()
+                            .getCardWidth()
+                            * this.proxyConfiguration
+                            .getCard()
+                            .getCardScale()));
             root.put("cardListWidth",
                     this.proxyConfiguration.getCard().getCardWidth()
-                    - this.proxyConfiguration.getCardListWidth());
+                            - this.proxyConfiguration.getCardListWidth());
             root.put("cardList", map);
 
             /* Merge data-model with template */
@@ -145,7 +151,6 @@ public class ProxyPrinter {
                 "q=!" + cardName,
                 null);
         String request = uri.toString();
-        //System.out.println(request);
 
         URL url = new URL(request);
         InputStream inputStream = url.openStream();
@@ -156,7 +161,6 @@ public class ProxyPrinter {
         Thread.sleep(1000);
         while (bufferedReader.ready()) {
             String lineHtml = bufferedReader.readLine();
-            //System.out.println(lineHtml);
             Thread.sleep(1);
             if (lineHtml.contains("http://magiccards.info/scans/en")
                     && lineHtml.contains("jpg")) {
