@@ -41,5 +41,6 @@ public final class ProxyPrinterRunner {
         ProxyPrinter printer =
                 (ProxyPrinter) context.getBean("proxyPrinter");
         printer.printProxies(flagParser);
+        context.close();
     }
 }

@@ -6,6 +6,9 @@ pom.xml.releaseBackup
 pom.xml.tag
 target
 .metadata
+.classpath
+.project
+.settings
 
 # Package Files #
 *.jar
