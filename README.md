@@ -1,7 +1,7 @@
 proxy-printer
 =============
 
-Prints out quick-and-dirty proxies for a popular trading card game
+Prints out quick-and-dirty proxies for the Magic: The Gathering trading card game
 
 ## DESCRIPTION:
 
@@ -39,15 +39,19 @@ To print everything except the basic lands run:
 
 You can also set some properties in the `proxy-printer.properties` file
 
-    config.cardBorder=0
-    config.cardHeight=319
-    config.cardWidth=222
-    config.cardScale=0.9
+    card.cardBorder=0
+    card.cardHeight=319
+    card.cardWidth=222
+    card.cardScale=0.9
     config.skipBasicLands=true
+
+## TODO
+Ability to print out tokens.
+Print out command line options help.
 
 ## CONTRIBUTE
 
-proxy-printer is written in Java using JDK 1.6
+proxy-printer is written in Java using JDK 1.7
 
 Send a pull request to <https://github.com/jendave/proxy-printer>.
 

@@ -16,10 +16,12 @@
  */
 package org.londonsburning.proxy;
 
+import com.fasterxml.jackson.core.JsonFactory;
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -30,11 +32,21 @@ import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.core.JsonParser;
+import org.apache.commons.io.IOUtils;
 
 /**
  * Generates the HTML for the proxies.
@@ -169,7 +181,26 @@ public class ProxyPrinter {
                         lineHtml.indexOf("jpg") + ".jpg".length() - 1);
             }
         }
-        return "";
+        return parseTokens(cardName);
+    }
+
+    public String parseTokens(final String cardName) throws IOException {
+        InputStream is;
+        String url = "";
+        is = Thread.currentThread().getContextClassLoader().getResourceAsStream("tokens.json");
+        JsonParser jsonParser = new JsonFactory().createParser(is);
+        Iterator<Token> it = new ObjectMapper().readValues(jsonParser, Token.class);
+        try {
+            while (it.hasNext()) {
+                Token token = it.next();
+                if (token.getName().equalsIgnoreCase(cardName)) {
+                    url = token.getUrl();
+                }
+            }
+        } finally {
+            is.close();
+        }
+        return url;
     }
 
     /**

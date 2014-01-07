@@ -31,4 +31,8 @@ public class ProxyPrinterTest
     public void testApp() {
         assertTrue(true);
     }
+
+    public void parseTokens() {
+
+    }
 }
