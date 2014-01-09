@@ -181,7 +181,12 @@ public class ProxyPrinter {
                         lineHtml.indexOf("jpg") + ".jpg".length() - 1);
             }
         }
-        return parseTokens(cardName);
+        String tokenUrl = parseTokens(cardName);
+        if (tokenUrl.isEmpty()) {
+            return "https://raw.github.com/jendave/proxy-printer/master/token-images/mtg-card-back.jpg";
+        } else {
+            return tokenUrl;
+        }
     }
 
     public String parseTokens(final String cardName) throws IOException {
