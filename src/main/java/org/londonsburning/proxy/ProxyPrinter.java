@@ -215,8 +215,7 @@ public class ProxyPrinter {
         for (String arg : flagParserParam.getFlags()) {
             if (!arg.contentEquals(flagParserParam.getSkipBasicLandsFlag())) {
                 File file = new File(arg);
-                org.londonsburning.proxy.Deck deck =
-                        new org.londonsburning.proxy.Deck(file);
+                Deck deck = new Deck(file);
                 deck.parse();
                 File htmlFile = new File(arg.replace(".dec", ".html"));
                 generateHtml(deck, htmlFile, flagParserParam
