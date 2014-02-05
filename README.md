@@ -45,6 +45,9 @@ You can also set some properties in the `proxy-printer.properties` file
     card.cardScale=0.9
     config.skipBasicLands=true
 
+## STATUS
+[![Build Status](https://travis-ci.org/jendave/proxy-printer.png?branch=master)](https://travis-ci.org/jendave/proxy-printer)
+
 ## TODO
 Ability to print out tokens.
 Print out command line options help.
