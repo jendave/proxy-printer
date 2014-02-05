@@ -16,3 +16,6 @@ target
 *.ear
 *.iml
 .DS_Store
+.gradle/1.10/taskArtifacts/cache.properties
+.gradle/1.10/taskArtifacts/cache.properties.lock
+src/test/resources/edh-vela-ninjas-small.html
