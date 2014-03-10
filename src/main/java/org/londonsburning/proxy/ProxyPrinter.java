@@ -17,36 +17,29 @@
 package org.londonsburning.proxy;
 
 import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.*;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.fasterxml.jackson.core.JsonParser;
-import org.apache.commons.io.IOUtils;
+import java.io.BufferedWriter;
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.TreeMap;
 
 /**
  * Generates the HTML for the proxies.
@@ -63,6 +56,13 @@ public class ProxyPrinter {
      */
     private final Logger logger = LoggerFactory
             .getLogger(ProxyPrinterRunner.class);
+
+    /**
+     *
+     */
+    private String proxyBackUrl =
+            "https://raw.github.com/jendave/proxy-printer"
+                    + "/master/token-images/mtg-card-back.jpg";
 
     /**
      * @param proxyConfigurationParam ProxyConfiguration
@@ -114,8 +114,8 @@ public class ProxyPrinter {
             root.put("cardBorder",
                     this.proxyConfiguration.getCard().getCardBorder());
             root.put("cardHeight", Math.round(
-                    this.proxyConfiguration.getCard().getCardHeight() *
-                            this.proxyConfiguration
+                    this.proxyConfiguration.getCard().getCardHeight()
+                            * this.proxyConfiguration
                                     .getCard()
                                     .getCardScale()));
             root.put("cardWidth", Math.round(
@@ -183,18 +183,26 @@ public class ProxyPrinter {
         }
         String tokenUrl = parseTokens(cardName);
         if (tokenUrl.isEmpty()) {
-            return "https://raw.github.com/jendave/proxy-printer/master/token-images/mtg-card-back.jpg";
+            return proxyBackUrl;
         } else {
             return tokenUrl;
         }
     }
 
-    public String parseTokens(final String cardName) throws IOException {
+    /**
+     *
+     * @param cardName  cardName
+     * @return  Url
+     * @throws IOException Exception
+     */
+    public final String parseTokens(final String cardName) throws IOException {
         InputStream is;
         String url = "";
-        is = Thread.currentThread().getContextClassLoader().getResourceAsStream("tokens.json");
+        is = Thread.currentThread().getContextClassLoader()
+                .getResourceAsStream("tokens.json");
         JsonParser jsonParser = new JsonFactory().createParser(is);
-        Iterator<Token> it = new ObjectMapper().readValues(jsonParser, Token.class);
+        Iterator<Token> it = new ObjectMapper()
+                .readValues(jsonParser, Token.class);
         try {
             while (it.hasNext()) {
                 Token token = it.next();

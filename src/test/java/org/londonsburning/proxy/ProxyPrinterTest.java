@@ -1,38 +1,22 @@
 package org.londonsburning.proxy;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.annotations.Test;
 
 /**
  * Unit test for simple App.
  */
-public class ProxyPrinterTest
-        extends TestCase {
-    /**
-     * Create the test case
-     *
-     * @param testName deckName of the test case
-     */
-    public ProxyPrinterTest(String testName) {
-        super(testName);
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite() {
-        return new TestSuite(ProxyPrinterTest.class);
-    }
+public class ProxyPrinterTest {
 
     /**
      * Rigourous Test :-)
      */
+    @Test
     public void testApp() {
-        assertTrue(true);
+        System.out.println("TestNG Test");
     }
 
+    @Test
     public void parseTokens() {
-
+        System.out.println("TestNG Test");
     }
 }

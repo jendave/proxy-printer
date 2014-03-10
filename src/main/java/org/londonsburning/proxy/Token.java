@@ -26,27 +26,31 @@ package org.londonsburning.proxy;
 public class Token {
 
     /**
-     *
-     * @return
+     * @return Token Name
      */
-    public String getName() {
+    public final String getName() {
         return this.name;
     }
 
     /**
-     *
-     * @return
+     * @return Token Url
      */
-    public String getUrl() {
+    public final String getUrl() {
         return this.url;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    /**
+     * @param nameParam Name
+     */
+    public final void setName(final String nameParam) {
+        this.name = nameParam;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    /**
+     * @param urlParam Url
+     */
+    public final void setUrl(final String urlParam) {
+        this.url = urlParam;
     }
 
     /**
@@ -59,12 +63,15 @@ public class Token {
      */
     private String url;
 
+    /**
+     * @return Description Info
+     */
     @Override
-    public String toString(){
+    public final String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("***** Token Details *****\n");
-        sb.append("Name="+getName()+"\n");
-        sb.append("Url="+getUrl()+"\n");
+        sb.append("Name=" + getName() + "\n");
+        sb.append("Url=" + getUrl() + "\n");
         sb.append("*****************************");
 
         return sb.toString();

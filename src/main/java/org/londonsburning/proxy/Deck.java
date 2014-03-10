@@ -41,7 +41,7 @@ public class Deck {
      *
      */
     private final Logger logger = LoggerFactory
-        .getLogger(Deck.class);
+            .getLogger(Deck.class);
 
     /**
      * @return String deckName
@@ -67,10 +67,9 @@ public class Deck {
     /**
      * @param numberOfCardsParam NumberOfCards
      */
-    public final void setNumberOfCards(int numberOfCardsParam) {
+    public final void setNumberOfCards(final int numberOfCardsParam) {
         this.numberOfCards = numberOfCardsParam;
     }
-
 
 
     /**
@@ -86,12 +85,12 @@ public class Deck {
     public final void setCardList(
             final TreeMap<String, Integer> cardListParam) {
         this.cardList = cardListParam;
-            }
+    }
 
     /**
      *
      */
-    private String deckName ="";
+    private String deckName = "";
 
     /**
      *
@@ -142,7 +141,8 @@ public class Deck {
                             String[] split = strLine.trim().split(" ", 2);
                             this.cardList.put(split[1],
                                     Integer.parseInt(split[0]));
-                            numberOfCards = numberOfCards + Integer.parseInt(split[0]);
+                            numberOfCards = numberOfCards
+                                    + Integer.parseInt(split[0]);
                         }
                     }
                 }
