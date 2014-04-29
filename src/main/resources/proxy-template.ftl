@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>${title}</title>
     <style type="text/css">
+        P.breakhere {page-break-before: always}
         <!--
         body, html, img, a {
             margin: 0;
@@ -35,6 +36,7 @@
 <body>
 <#list urls as url><img src="${url}" alt="${url}" height="${cardHeight}" width="${cardWidth}" style="margin: 0 ${cardBorder}px ${cardBorder}px 0;"></#list>
 <br>
+<P CLASS="breakhere">
 <table style="font-size:10px;" border=1 cellpadding="5" cellspacing="1">
     <tr>
     <td width="${cardListWidth}" valign="top">

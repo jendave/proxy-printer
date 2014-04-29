@@ -33,8 +33,7 @@
             </set>
         </constructor-arg>
         <constructor-arg name="flagParserParam" ref="flagParser"/>
-        <property name="skipBasicLands" value="false"/>
-
+        <property name="skipBasicLands" value="true"/>
     </bean>
 
     <bean id="flagParser" class="org.londonsburning.proxy.FlagParser">
