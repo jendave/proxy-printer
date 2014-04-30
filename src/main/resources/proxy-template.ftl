@@ -34,10 +34,10 @@
     </style>
 </head>
 <body>
-<#list urls as url><img src="${url}" alt="${url}" height="${cardHeight}" width="${cardWidth}" style="margin: 0 ${cardBorder}px ${cardBorder}px 0;"></#list>
+<#list urls as url><a href="${url}"><img src="${url}" alt="${url}" height="${cardHeight}" width="${cardWidth}" style="margin: 0 ${cardBorder}px ${cardBorder}px 0;"></a></#list>
 <br>
 <P CLASS="breakhere">
-<table style="font-size:10px;" border=1 cellpadding="5" cellspacing="1">
+<table style="font-size:10px;" border=1 cellpadding="3" cellspacing="1">
     <tr>
     <td width="${cardListWidth}" valign="top">
         <b>${title}</b><br>
