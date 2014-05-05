@@ -49,7 +49,6 @@ You can also set some properties in the `proxy-printer.properties` file
 [![Build Status](https://travis-ci.org/jendave/proxy-printer.png?branch=master)](https://travis-ci.org/jendave/proxy-printer)
 
 ## TODO
-Ability to print out tokens.
 Print out command line options help.
 
 ## CONTRIBUTE
