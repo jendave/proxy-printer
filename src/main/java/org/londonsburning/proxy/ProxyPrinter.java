@@ -36,10 +36,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * Generates the HTML for the proxies.
@@ -108,7 +105,7 @@ public class ProxyPrinter {
                 }
             }
 
-            final TreeMap<String, Integer> map =
+            final HashMap<String, Integer> map =
                     deck.getCardList();
             root.put("urls", list);
             root.put("cardBorder",

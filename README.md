@@ -82,13 +82,78 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## CREDITS
-David Clarke - http://xandor.ca/tokens/
+### Website Links
+http://www.mtgsalvation.com/forums/magic-fundamentals/magic-general/330492-the-great-creature-token-project
+http://www.mtgsalvation.com/forums/creativity/artwork/340749-official-custom-tokens-token-collection-thread
 ### Token Images
+David Clarke - http://xandor.ca/tokens/
+
 Dragon Spirit
 Urami
 Voja
 Centaur
 Knight
 Faerie
+
+StClaus @ MTGSalvation.com - http://www.mtgsalvation.com/forums/creativity/artwork/340749-official-custom-tokens-token-collection-thread?page=17#c423
+Ape
+Assembly-Worker
+Bat
+Beast
+Bird
+Camarid
+Cat Warrior
+Centau
+Citizen
+Drake
+Elemental
+Giant
+Goblin - Haste
+Graveborn
+Horror
+Insect - Shroud
+Karldra
+Knight - B
+Kobolds
+Marit Lage
+Pest
+Pincher
+Sand
+Serf
+Sheep
+Snake
+Spawn
+Spirit - Colorless
+Thrull
+Triskelavite
+Twin
+Weird
+Wirefly
+Wolf - Sound the Call
+Wurm
+
+Dr. Shades @ MTGSalvation - http://www.mtgsalvation.com/forums/magic-fundamentals/magic-general/330492-the-great-creature-token-project
+A huge amount of tokens
+
+Missing:
+1/1 Green Ape (Uktabi Kong)
+Bird 4/4 Red (Rukh Egg)
+Cat Warrior 3/3 (Nactl War-Pride)
+X/X Green Elephant (Elephant Resurgence)
+1/1 Colorless Expansion-Symbol (Symbol Status)
+5/5 Green Beast--Trample (Spawning Grounds)
+?/? ? Artifact, ? (Mirrorworks)
+?/? ? ?--? "This creature is a Spirit in addition to its other types." (Séance)
+?/? ? ?--? "At the beginning of your upkeep, if this creature isn't a token, put a token onto the battlefield that's a copy of this creature." (Progenitor Mimic)
+?/? ? ?--? (Back from the Brink) 
+1/1 Red Human--Haste (Thatcher Revolt)
+7/7 Green Insect named "Giant Adephage"--Trample, "Whenever Giant Adephage deals combat damage to a player, put a token onto the battlefield that's a copy of Giant Adephage." (Giant Adephage)
+1/1 Colorless artifact creature, Myr named "Myr Propagator"--"3, t: Put a token that's a copy of Myr Propagator onto the battlefield." (Myr Propagator)
+0/2 Green Plant Hydra--Defender, "Whenever this creature is dealt damage, you may put a creature token in play that's a copy of this creature." (Sprouting Phytohydra)
+*/* Black Rat named "Pack Rat"--"Pack Rat's power and toughness are each equal to the number of Rats you control. 2B, Discard a card: Put a token onto the battlefield that's a copy of Pack Rat." (Pack Rat)
+4/4 White Rhino Soldier named "Mirror-Sigil Sergeant"--Trample, "At the beginning of your upkeep, if you control a blue permanent, you may put a token into play that's a copy of Mirror-Sigil Sergeant." (Mirror-Sigil Sergeant)
+*/* Black Shadow (Broken Visage)
+1/1 Red Soldier--Haste (Akroan Crusader) 
+
 
 

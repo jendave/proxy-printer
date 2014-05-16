@@ -26,6 +26,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 import java.util.TreeMap;
 
 /**
@@ -75,7 +76,7 @@ public class Deck {
     /**
      * @return cardList
      */
-    public final TreeMap<String, Integer> getCardList() {
+    public final HashMap<String, Integer> getCardList() {
         return cardList;
     }
 
@@ -83,7 +84,7 @@ public class Deck {
      * @param cardListParam CardList
      */
     public final void setCardList(
-            final TreeMap<String, Integer> cardListParam) {
+            final HashMap<String, Integer> cardListParam) {
         this.cardList = cardListParam;
     }
 
@@ -101,7 +102,7 @@ public class Deck {
     /**
      *
      */
-    private TreeMap<String, Integer> cardList = new TreeMap<String, Integer>();
+    private HashMap<String, Integer> cardList = new HashMap<String, Integer>();
 
     /**
      *
