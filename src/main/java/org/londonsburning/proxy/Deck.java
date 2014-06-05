@@ -26,8 +26,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.TreeMap;
+import java.util.LinkedHashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -76,7 +75,7 @@ public class Deck {
     /**
      * @return cardList
      */
-    public final HashMap<String, Integer> getCardList() {
+    public final LinkedHashMap<String, Integer> getCardList() {
         return cardList;
     }
 
@@ -84,7 +83,7 @@ public class Deck {
      * @param cardListParam CardList
      */
     public final void setCardList(
-            final HashMap<String, Integer> cardListParam) {
+            final LinkedHashMap<String, Integer> cardListParam) {
         this.cardList = cardListParam;
     }
 
@@ -102,7 +101,7 @@ public class Deck {
     /**
      *
      */
-    private HashMap<String, Integer> cardList = new HashMap<String, Integer>();
+    private LinkedHashMap<String, Integer> cardList = new LinkedHashMap<String, Integer>();
 
     /**
      *

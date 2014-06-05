@@ -105,7 +105,7 @@ public class ProxyPrinter {
                 }
             }
 
-            final HashMap<String, Integer> map =
+            final LinkedHashMap<String, Integer> map =
                     deck.getCardList();
             root.put("urls", list);
             root.put("cardBorder",
