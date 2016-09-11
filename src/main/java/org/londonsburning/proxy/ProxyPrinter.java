@@ -36,6 +36,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.*;
 
 /**
@@ -163,19 +164,22 @@ public class ProxyPrinter {
         String request = uri.toString();
 
         URL url = new URL(request);
-        InputStream inputStream = url.openStream();
+        URLConnection urlConnection = url.openConnection();
+        urlConnection.setRequestProperty("User-Agent","Mozilla/5.0 (Windows NT 5.1; rv:19.0) Gecko/20100101 Firefox/19.0");
         BufferedReader bufferedReader =
                 new BufferedReader(
-                        new InputStreamReader(inputStream, "UTF-8"));
-
+                        new InputStreamReader(urlConnection.getInputStream(), "UTF-8"));
         Thread.sleep(1000);
         while (bufferedReader.ready()) {
             String lineHtml = bufferedReader.readLine();
             Thread.sleep(1);
+//            System.out.println("URL: " + lineHtml);
             if (lineHtml.contains("http://magiccards.info/scans/en")
                     && lineHtml.contains("jpg")) {
                 return lineHtml.substring(lineHtml.indexOf("http"),
                         lineHtml.indexOf("jpg") + ".jpg".length() - 1);
+
+                //return lineHtml;
             }
         }
         String tokenUrl = parseTokens(cardName);

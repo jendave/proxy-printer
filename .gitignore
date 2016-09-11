@@ -15,6 +15,7 @@ target
 *.war
 *.ear
 *.iml
+*.swp
 .DS_Store
 .gradle/1.10/taskArtifacts/cache.properties
 .gradle/1.10/taskArtifacts/cache.properties.lock
